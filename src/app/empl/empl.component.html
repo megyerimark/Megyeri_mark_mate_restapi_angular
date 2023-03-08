@@ -8,7 +8,7 @@
 
 <h1 id="datas"
  class=" animate__animated animate__jackInTheBox">Tanulók adatai </h1>
-<table class="table table-striped" >
+<!-- <table class="table table-striped" >
     <thead id="gr">
       <tr >
         <th  scope="col" class=" animate__animated animate__zoomInRight">ID</th>
@@ -25,6 +25,27 @@
         <td  id="da" class="  animate__animated animate__backInLeft">{{student.gender}}</td>
         <td  id="da" class="  animate__animated animate__backInLeft">{{student.group}}</td>
         <td></td>
+        
+        
+      </tr>
+    </tbody>
+  </table> -->
+<table class="table table-striped" >
+    <thead id="gr">
+      <tr >
+        <th  scope="col" class=" animate__animated animate__zoomInRight">ID</th>
+        <th  scope="col" class=" animate__animated animate__zoomInRight">Név</th>
+        <th scope="col" class=" animate__animated animate__zoomInRight">Neme</th>
+        <th scope="col"class=" animate__animated animate__zoomInRight">Csoport</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let score of scores">
+            <td>{{score.id}}</td>
+            <td>{{score.score}}</td>
+            <td>{{score.studentId}}</td>
+       
         
         
       </tr>

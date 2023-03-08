@@ -31,17 +31,16 @@ export class ServiceService {
     let url = this.host + endpoint;
     return this.http.get<any>(url, httpOption);
   }
+  
   getScores(){
-
-    let  headers = new HttpHeaders({
-      'Content-Type':'application/json'
+    let headers = new HttpHeaders({
+     'Content-Type': 'application/json'
     })
-
     let httpOption = {
-      headers:headers
+     headers: headers
     }
     let endpoint = "scores";
     let url = this.host + endpoint;
     return this.http.get<any>(url, httpOption);
-  }
+ }
 }

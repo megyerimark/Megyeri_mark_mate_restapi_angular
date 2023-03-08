@@ -34,7 +34,7 @@ export class EmplComponent implements OnInit {
   }
   scores!:any;
   getScores(){
-    this.api.getStudents().subscribe({
+    this.api.getScores().subscribe({
       next :data => {
         this.scores = data;
         console.log(this.scores);
