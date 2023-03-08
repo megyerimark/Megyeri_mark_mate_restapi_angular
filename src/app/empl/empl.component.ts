@@ -6,6 +6,7 @@
 // Licenc: GNU GPL
 
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from '../service/service.service';
 
 @Component({
   selector: 'app-empl',
@@ -14,9 +15,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmplComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api:ServiceService) { }
 
   ngOnInit(): void {
+    this.getEmpl();
+  }
+
+
+  
   }
 
 }
