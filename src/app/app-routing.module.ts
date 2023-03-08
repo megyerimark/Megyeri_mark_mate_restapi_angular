@@ -16,6 +16,7 @@ const routes: Routes = [
 
   {path:'empl', component:EmplComponent},
   {path:'about', component:AboutComponent},
+  {path:'', redirectTo:'about', pathMatch:'full'}
 ];
 
 @NgModule({
