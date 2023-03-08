@@ -18,6 +18,8 @@ export class EmplComponent implements OnInit {
   constructor(private api:ServiceService) { }
 
   ngOnInit(): void {
+    this.getStudents();
+    this.getScores();
   
   }
 
@@ -26,7 +28,16 @@ export class EmplComponent implements OnInit {
     this.api.getStudents().subscribe({
       next :data => {
         this.students = data;
-        alert (this.students);
+        console.log(this.students);
+      }
+    })
+  }
+  scores!:any;
+  getScores(){
+    this.api.getStudents().subscribe({
+      next :data => {
+        this.scores = data;
+        console.log(this.scores);
       }
     })
   }

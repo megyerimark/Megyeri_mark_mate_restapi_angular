@@ -6,11 +6,13 @@
 // Licenc: GNU GPL -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-<h1 class=" animate__animated animate__jackInTheBox">Tanulók adatai </h1>
-<table class="table">
-    <thead>
-      <tr>
-        <th scope="col" class=" animate__animated animate__zoomInRight">Név</th>
+<h1 id="datas"
+ class=" animate__animated animate__jackInTheBox">Tanulók adatai </h1>
+<table class="table table-striped" >
+    <thead id="gr">
+      <tr >
+        <th  scope="col" class=" animate__animated animate__zoomInRight">ID</th>
+        <th  scope="col" class=" animate__animated animate__zoomInRight">Név</th>
         <th scope="col" class=" animate__animated animate__zoomInRight">Neme</th>
         <th scope="col"class=" animate__animated animate__zoomInRight">Csoport</th>
        
@@ -18,6 +20,11 @@
     </thead>
     <tbody>
       <tr *ngFor = 'let student of students'>
+        <td id="da"  class="  animate__animated animate__backInLeft">{{student.id}}</td>
+        <td id="da" class="  animate__animated animate__backInLeft">{{student.name}}</td>
+        <td  id="da" class="  animate__animated animate__backInLeft">{{student.gender}}</td>
+        <td  id="da" class="  animate__animated animate__backInLeft">{{student.group}}</td>
+        <td></td>
         
         
       </tr>
