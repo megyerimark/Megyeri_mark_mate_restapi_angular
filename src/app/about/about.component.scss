@@ -69,10 +69,18 @@ body::after{
 .container .card .content{
     padding: 20px;
     text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
     transition: 0.5s;
+
+}
+.container .card:hover .content
+{
+    transform: translateY(0px);
+    opacity: 1;
+
 }
 .container .card .content h2{
-    position: absolute;
     top: 5px;
     left: -3px;
     font-size: 35px;
@@ -99,4 +107,5 @@ body::after{
     border-radius: 3px;
     text-decoration: none;
     font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
