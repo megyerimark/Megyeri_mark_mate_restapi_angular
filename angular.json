@@ -31,7 +31,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/js/vanillia-tilt.js"
+             
             ]
           },
           "configurations": {
@@ -105,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "babe4504-07f4-4a0e-916c-ad16c920e433"
   }
 }
